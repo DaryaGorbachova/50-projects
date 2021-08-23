@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.container {
+    font: 24px 'Times New Roman';
+    position: relative;
+    height: 100vh;
+    text-align: center;
+}
+
+#photos {
+    padding: 80px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.photo {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 8px;
+    flex: 0.5;
+    flex-direction: row;
+    transition: all 700ms;
+    filter: blur(5px);
+}
+
+#photos > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.photo.active {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin: 8px;
+    flex-direction: row;
+    flex: 5;
+    transition: transform 0.5s ease-in; 
+    filter: none;
+}
